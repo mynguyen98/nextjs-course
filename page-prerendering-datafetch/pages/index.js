@@ -1,19 +1,28 @@
-import Link from 'next/link'
-
+import Link from "next/link";
+import fs from "fs/promises";
+import path from "path";
 export default function HomePage(props) {
-  const { products } = props
+  const { products } = props;
   return (
     <ul>
       {products.map((product) => (
-        <li>{product.title}</li>
+        <li key={product.id}>{product.title}</li>
       ))}
     </ul>
-  )
+  );
 }
-export async function getStaticProps() {
+export const getStaticProps = async (context) => {
+  const filePath = path.join(process.cwd(), "data", "dummy-backend.json");
+  console.log(process.cwd());
+  console.log(filePath);
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData);
   return {
     props: {
-      products: [{ id: 'p1', title: 'product1' }],
+      products: data.products,
     },
-  }
-}
+    revalidate: 10, //10 seconds
+    // notFound: true,
+    // redirect:
+  };
+};
