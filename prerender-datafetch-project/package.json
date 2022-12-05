@@ -1,5 +1,5 @@
 {
-  "name": "page-prerendering-datafetch",
+  "name": "prerender-datafetch-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,6 @@
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "swr": "^1.3.0"
+    "react-dom": "18.2.0"
   }
 }
