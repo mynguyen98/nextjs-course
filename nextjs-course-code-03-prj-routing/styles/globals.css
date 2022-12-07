@@ -9,7 +9,7 @@ body {
   font-family: 'Open Sans', 'Lato', sans-serif;
   color: #414141;
   background-color: #e4f1f1;
-} 
+}
 
 h1,
 h2,
@@ -31,3 +31,12 @@ ul {
   margin: auto;
   text-align: center;
 }
+/* #overlays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #2b2b2b;
+  opacity: 0.8;
+} */
