@@ -1,23 +1,8 @@
-import { Container, Row, Col } from 'react-bootstrap'
-
+import Hero from '../components/home-page/hero'
 export default function CompanyPage() {
   return (
     <>
-      <Container fluid>
-        <Row>
-          <Col>
-            <p>Yay, it's fluid!</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <p>Yay, it's fluid!</p>
-          </Col>
-          <Col>
-            <p>Yay, it's fluid!</p>
-          </Col>
-        </Row>
-      </Container>
+      <Hero />
     </>
   )
 }

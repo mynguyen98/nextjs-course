@@ -1,0 +1,10 @@
+.section {
+  background-image: url('/images/home/hero/hero-home-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.business {
+  width: 56.9rem;
+}

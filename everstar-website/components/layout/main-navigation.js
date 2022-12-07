@@ -5,12 +5,14 @@ import classes from './main-navigation.module.css'
 import IconChevronDown from '../icons/icons/icon-chevron-down'
 function MainNavigation() {
   return (
-    <header className={classes.header}>
-      <Link href='/'>
-        <Logo />
-      </Link>
-      <nav>
-        <ul>
+    <nav className={classes.navContainer}>
+      <div className={classes.navCenter}>
+        <div className={classes.navLogo}>
+          <Link href='/'>
+            <Logo />
+          </Link>
+        </div>
+        <ul className={classes.navLinks}>
           <li>
             <Link href='/'>Company</Link>
           </li>
@@ -24,12 +26,12 @@ function MainNavigation() {
             <Link href='/portfolio'>Porfolio</Link>
           </li>
         </ul>
-      </nav>
-      <div>
-        <span>EN</span>
-        <IconChevronDown />
+        <div>
+          <span>EN</span>
+          <IconChevronDown />
+        </div>
       </div>
-    </header>
+    </nav>
   )
 }
 

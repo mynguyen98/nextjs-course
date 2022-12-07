@@ -4,7 +4,7 @@ function Layout(props) {
   return (
     <>
       <MainNavigation />
-      <main>{props.children}</main>
+      <main className='main-padding'>{props.children}</main>
       <MainFooter />
     </>
   )
