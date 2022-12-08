@@ -18,6 +18,38 @@
   align-items: center;
   max-width: var(--max-width);
 }
+
+.language {
+  position: relative;
+}
+.langList {
+  position: absolute;
+  top: 3.2rem;
+  right: -1rem;
+  background-color: var(--white-color);
+  display: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px var(--shadow-basic);
+}
+.language::after {
+  position: absolute;
+  content: '';
+  background-color: transparent;
+  width: 8.8rem;
+  height: 1rem;
+  top: 22px;
+  right: -10px;
+}
+.language:hover .langList {
+  display: block;
+}
+.langList li {
+  text-align: center;
+  width: 8.6rem;
+  font-size: 2rem;
+  line-height: 4.4rem;
+  color: var(--text-disable-color);
+}
 .navLinks {
   list-style: none;
   display: flex;

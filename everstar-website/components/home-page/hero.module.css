@@ -1,11 +1,13 @@
 .section {
-  background-image: url("/images/home/hero/hero-home-bg.png");
+  background-image: url('/images/home/hero/hero-home-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 900px;
+  width: 100%;
+  height: 80vh;
 }
 .container {
-  padding-top: 100px;
+  padding: 9.8rem 0 9.8rem 0;
 }
 .business {
   width: 56.9rem;
@@ -28,5 +30,13 @@
   padding: 0.5rem;
 }
 .imgContainer img {
-  width: 100%;
+  width: 90%;
+}
+.margin {
+  margin-right: 3rem;
+}
+@media screen and (max-width: 992px) {
+  .section {
+    height: 70vh;
+  }
 }

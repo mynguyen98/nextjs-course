@@ -3,7 +3,11 @@ import Link from 'next/link'
 import Logo from '../icons/logo/logo-company'
 import classes from './main-navigation.module.css'
 import IconChevronDown from '../icons/icons/icon-chevron-down'
+import { useRouter } from 'next/router'
 function MainNavigation() {
+  const router = useRouter()
+  const { locale, asPath } = router
+  console.log(router)
   return (
     <nav className={classes.navContainer}>
       <div className={classes.navCenter}>
@@ -26,9 +30,31 @@ function MainNavigation() {
             <Link href='/portfolio'>Porfolio</Link>
           </li>
         </ul>
-        <div>
-          <span>EN</span>
-          <IconChevronDown />
+        <div className={classes.language}>
+          <div className='center-list'>
+            <span
+              style={{
+                fontSize: '2rem',
+                paddingRight: '1rem',
+                fontWeight: '500',
+              }}
+            >
+              {locale === 'en-US' ? 'EN' : 'KR'}
+            </span>
+            <IconChevronDown />
+          </div>
+          <ul className={classes.langList}>
+            <li>
+              <Link href={asPath} locale='en-US'>
+                EN
+              </Link>
+            </li>
+            <li>
+              <Link href={asPath} locale='kr-KR'>
+                KR
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

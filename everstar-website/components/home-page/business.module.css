@@ -1,0 +1,28 @@
+.title {
+  color: var(--text-disable-color);
+  margin-top: 2rem;
+}
+.header {
+  border-bottom: 4px solid var(--brand-main-color);
+  padding-bottom: 1.2rem;
+}
+.item {
+  width: 20%;
+  padding: 0 1.2rem;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrow {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  width: 1rem;
+  height: 1rem;
+  left: calc(50% - 1.2rem);
+  border-left: 1.2rem solid transparent;
+  border-right: 1.2rem solid transparent;
+  border-bottom: 2rem solid var(--brand-main-color);
+  transition: var(--transition);
+}
