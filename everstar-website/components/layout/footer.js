@@ -1,7 +1,16 @@
+import LogoSymbol from "../icons/logo/logo-symbol";
+import classes from "./footer.module.css";
 export default function MainFooter() {
   return (
-    <div>
-      <h1>EVERSTAR GLOBAL JOINT STOCK COMPANY</h1>
-    </div>
-  )
+    <section className={classes.section}>
+      <div>
+        <div>
+          <span>
+            <LogoSymbol />
+          </span>
+          <p>EVERSTAR GLOBAL JOINT STOCK COMPANY</p>
+        </div>
+      </div>
+    </section>
+  );
 }
