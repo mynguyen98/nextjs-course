@@ -1,10 +1,32 @@
 .section {
-  background-image: url('/images/home/hero/hero-home-bg.png');
+  background-image: url("/images/home/hero/hero-home-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 900px;
 }
-
+.container {
+  padding-top: 100px;
+}
 .business {
   width: 56.9rem;
+}
+.mainHeader {
+  font-size: 4.4rem;
+  font-weight: 600;
+  padding: 2.4rem 0 1.2rem 0;
+}
+.subHeader {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.imgContainer {
+  padding: 0.5rem;
+}
+.imgContainer img {
+  width: 100%;
 }
