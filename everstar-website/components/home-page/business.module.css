@@ -19,7 +19,7 @@
 }
 
 .arrow {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -24px;
   width: 1rem;
@@ -56,7 +56,6 @@
   transition: var(--transition);
 }
 .feature img {
-  width: 30%;
 }
 .feature p {
   width: 90%;

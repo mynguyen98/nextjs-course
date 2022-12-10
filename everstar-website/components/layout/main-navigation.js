@@ -18,16 +18,24 @@ function MainNavigation() {
         </div>
         <ul className={classes.navLinks}>
           <li>
-            <Link href='/'>Company</Link>
+            <Link href='/' scroll={false}>
+              Company
+            </Link>
           </li>
           <li>
-            <Link href='/services'>Services</Link>
+            <Link href='/services' scroll={false}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link href='/culture'>Culture</Link>
+            <Link href='/culture' scroll={false}>
+              Culture
+            </Link>
           </li>
           <li>
-            <Link href='/portfolio'>Porfolio</Link>
+            <Link href='/portfolio' scroll={false}>
+              Porfolio
+            </Link>
           </li>
         </ul>
         <div className={classes.language}>
