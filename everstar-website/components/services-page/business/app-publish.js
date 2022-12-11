@@ -1,7 +1,14 @@
-export default function AppPublish() {
+import ItemDetailApp from "./item-detail-app";
+import classes from "./app-publish.module.css";
+export default function AppPublish({ business }) {
+  console.log(business);
   return (
     <div>
-      <h1>App Publishing</h1>
+      <div className={classes.listItem}>
+        {business.map((businessItem, index) => (
+          <ItemDetailApp item={businessItem} />
+        ))}
+      </div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
 .section {
-  background-image: url('/images/service/business/about-us-bg.png');
+  background-image: url("/images/service/business/about-us-bg.png");
   background-position: center;
   background-size: cover;
 }
@@ -27,4 +27,7 @@
   text-align: center;
   padding-bottom: 1.2rem;
   border-bottom: 4px solid var(--brand-main-color);
+}
+.detailItem {
+  padding: 3rem 0;
 }
